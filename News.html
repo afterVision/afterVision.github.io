@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>afterVision bacheca</title>
+	<style type="text/css">
+		.icona {
+			cursor: pointer; 
+		 width: 35px;
+		 height: 5px;
+		 background-color: white;
+		 margin: 6px 0;
+		 position: relative;
+		 cursor: pointer;
+
+
+		-webkit-transition: background-color;
+		 -webkit-transition-duration: 0.5s;
+		 -webkit-transition-timing-function: ease-in;
+
+
+
+		-moz-transition: background-color;
+		 -moz-transition-duration: 0.5s;
+		 -moz-transition-timing-function: ease-in;
+
+
+
+		-ms-transition: background-color;
+		 -ms-transition-duration: 0.5s;
+		 -ms-transition-timing-function: ease-in;
+
+
+
+		-o-transition: background-color;
+		 -o-transition-duration: 0.5s;
+		 -o-transition-timing-function: ease-in;
+		}
+
+
+
+		.header{
+		 position: relative;
+		 width: 100%;
+		 height: 200px;
+		 background: fixed no-repeat center;
+		 background-size: cover;
+		 background-image: url("sfondo3.jpg");
+		 }
+
+
+
+		.trasparenza{
+		 position: absolute;
+		 width: 100%;
+		 height: 100%;
+		 background-color: grey;
+		 opacity: 0.6;
+		 -webkit-transition: opacity;
+		 -webkit-transition-duration: 1.5s ;
+		 -webkit-transition-timing-function: easy-in;
+		 -moz-transition: opacity;
+		 -moz-transition-duration: 1.5s ;
+		 -moz-transition-timing-function: easy-in;
+		 -ms-transition: opacity;
+		 -ms-transition-duration: 1.5s ;
+		 -ms-transition-timing-function: easy-in;
+		 -o-transition: opacity;
+		 -o-transition-duration: 1.5s ;
+		 -o-transition-timing-function: easy-in;
+		 }
+
+
+
+		.trasparenza:hover{
+		 opacity: 0.4;
+		 }
+
+
+
+		.container{
+			position: absolute;
+			top: 15%;
+			left: 5%;
+		}
+
+
+
+		.container:hover .icona{
+		 background-color: white;
+		}
+
+
+
+		.container:hover .icona{
+		 background-color: white;
+		 cursor: pointer; 
+		}
+
+
+
+		.overlay {
+		 height: 100%;
+		 width: 0;
+		 position: fixed;
+		 z-index: 1;
+		 left: 0;
+		 top: 0;
+		 background-color: rgb(0,0,0);
+		 background-color: rgba(0,0,0, 0.9);
+		 overflow-x: hidden;
+		 transition: 0.5s;
+		}
+
+
+
+		.overlay-content {
+		 position: relative;
+		 top: 25%;
+		 width: 20%;
+		 text-align: left;
+		 margin-top: 30px;
+		 margin-left: 30px;
+		}
+
+
+
+		.overlay a {
+		 padding: 8px;
+		 text-decoration: none;
+		 font-size: 25px;
+		 color: #818181;
+		 display: block;
+		 transition: 0.3s;
+		}
+
+
+
+		.overlay a:hover, .overlay a:focus {
+		 color: #f1f1f1;
+		}
+
+
+
+		.overlay .closebtn {
+		 position: absolute;
+		 top: 20px;
+		 left: 295px;
+		 font-size: 60px;
+		}
+
+
+
+		@media screen and (max-height: 450px) {
+		 .overlay a {font-size: 20px}
+		 .overlay .closebtn {
+		 font-size: 40px;
+		 top: 15px;
+		 right: 35px;
+		 }
+		}
+
+
+
+		.titolo {
+		 position: absolute;
+		 top: 100px;
+		 left: 50%;
+		 transform: translate(-50%, -50%);
+		 text-align: center;
+		 color: white;
+		 font-size: 48px;
+		}
+
+		#vid{
+			position: relative;
+			left: 110px;
+		}
+
+		/* Create four equal columns that floats next to each other */
+		.column {
+		 float: left;
+		 width:33.33%;
+		 height: 445px;
+		}
+
+
+
+		/* Clear floats */
+		.row:after {
+		 content: "";
+		 display: table;
+		 clear: both;
+		}
+
+
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 900px) {
+		 .column {
+		 width: 50%;
+		 }
+		}
+
+
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		 .column {
+		 width: 100%;
+		 }
+		}
+
+		h1{
+			color: black;
+		}
+
+		#primo{
+			background-color: #a9ff77;
+		}
+
+		#secondo{
+			background-color: #ff9e81;
+		}
+
+		#terzo{
+			background-color: #ffff9e;
+		}
+
+		#fig0{
+			position: relative;
+			top: 10px;
+			left: 10px;
+		}
+		#fig1{
+			position: relative;
+			left: -12px;
+		}
+		#fig2{
+			position: relative;
+			top: -300px;
+			left: 260px;
+		}
+		body{
+			overflow-x: hidden;
+		}
+	</style>
+</head>
+<body>
+		<!-- The overlay -->
+		<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<!-- Overlay content -->
+			 <div class="overlay-content">
+			 	<a href="javascript:location.href='file:afterVision.html'">Home</a>
+				<a href="javascript:location.href='file:Informazioni.html'">Informazioni</a>
+				<a href="javascript:location.href='file:Contenuti.html'">Film</a>
+				<a href="javascript:location.href='file:Programmazione.html'">Programmazione</a>
+				<a href="javascript:location.href='file:Contatti.html'">Contatti</a>
+			 </div>
+		</div>
+
+
+
+		<!-- Use any element to open/show the overlay navigation menu -->
+		<div class="header">
+		<div class="trasparenza"></div>
+		 <div class=titolo><b> Community </b></div>
+		<div class="container">
+		<div onclick="openNav()">
+		 <div class="icona"></div>
+		 <div class="icona"></div>
+		 <div class="icona"></div>
+		</div>
+		</div>
+		</div>
+
+		<script type="text/javascript">
+			/* Open when someone clicks on the span element */
+			function openNav() {
+			 document.getElementById("myNav").style.width = "350px";
+			}
+
+
+
+			/* Close when someone clicks on the "x" symbol inside the overlay */
+			function closeNav() {
+			 document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+
+
+
+		<div class="column" id="primo">
+			<h1 align='center'> Template </h1>
+			<figure id="fig0"> 
+				<a href="https://drive.google.com/drive/folders/1cyqC3kwe6FtGRgpk4s0dfmputzpbJfoL?usp=sharing" target="_blank">
+					<img src="img/mdm.jpg" alt="GoogleDrive">
+				</a>
+			</figure>
+			<br>
+			<p align="center"> <b>È possibile guardare i template cliccando sull'immagine. <br>
+			I template possono essere scaricati ed utilizzati senza però eliminare il nostro logo. </b></p>
+		</div>
+	
+		<div class="column" id="secondo">
+			<h1 align='center'> Nuovo video sul canale </h1>
+			<figure id="fig1"> 
+				<a href="https://www.facebook.com/events/184210113501678/" target="_blank">
+					<img src="img/news.jpg" alt="new">
+				</a>
+				<p align="center"> <b>Clicca sull'immagine per sapere quando sarà il prossimo evento. </b></p>
+			</figure>
+		</div>
+
+		<div class="column" id="terzo">
+			<h1 align='center'> CineInfo </h1>
+			<figure id="fig1"> 
+				<a href="https://www.goldenglobes.com/" target="_blank">
+					<img src="img/gg.jpg" alt="goldenglobe">
+				</a>
+			</figure>
+			<figure id="fig1"> 
+				<a href="https://www.oscars.org/" target="_blank">
+					<img src="img/oscar.jpg" alt="oscar">
+				</a>
+			</figure>
+			<figure id="fig2"> 
+				<a href="https://www.daviddidonatello.it/" target="_blank">
+					<img src="img/david.jpg" alt="david_di_donatello">
+				</a>
+			</figure>
+		</div>
+
+
+<footer style="color: black; position: fixed;top: 625px; right: 30px;">
+			Copyright © Gaia Calamari, all rights reserved
+</footer>		
+		
+		
+
+</body>
+</html>

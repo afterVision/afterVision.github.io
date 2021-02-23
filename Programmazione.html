@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>afterVision programmazione</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		
+			.icona {
+				cursor: pointer; 
+			 width: 35px;
+			 height: 5px;
+			 background-color: white;
+			 margin: 6px 0;
+			 position: relative;
+			 cursor: pointer;
+
+
+			-webkit-transition: background-color;
+			 -webkit-transition-duration: 0.5s;
+			 -webkit-transition-timing-function: ease-in;
+
+
+
+			-moz-transition: background-color;
+			 -moz-transition-duration: 0.5s;
+			 -moz-transition-timing-function: ease-in;
+
+
+
+			-ms-transition: background-color;
+			 -ms-transition-duration: 0.5s;
+			 -ms-transition-timing-function: ease-in;
+
+
+
+			-o-transition: background-color;
+			 -o-transition-duration: 0.5s;
+			 -o-transition-timing-function: ease-in;
+			}
+
+
+
+			.header{
+			 position: relative;
+			 width: 100%;
+			 height: 60px;
+			 background: fixed no-repeat center;
+			 background-size: cover;
+			 background-color: black;
+			 }
+
+
+
+			.trasparenza{
+			 position: absolute;
+			 width: 100%;
+			 height: 100%;
+			 -webkit-transition-duration: 1.5s ;
+			 -webkit-transition-timing-function: easy-in;
+			 -moz-transition: opacity;
+			 -moz-transition-duration: 1.5s ;
+			 -moz-transition-timing-function: easy-in;
+			 -ms-transition: opacity;
+			 -ms-transition-duration: 1.5s ;
+			 -ms-transition-timing-function: easy-in;
+			 -o-transition: opacity;
+			 -o-transition-duration: 1.5s ;
+			 -o-transition-timing-function: easy-in;
+			 }
+
+
+
+			.trasparenza:hover{
+			 opacity: 0.4;
+			 }
+
+
+
+			.container{
+				position: absolute;
+				top: 15%;
+				left: 1%;;
+				background-color: black;
+			}
+
+
+
+			.container:hover .icona{
+			 background-color: white;
+			 cursor: pointer; 
+			}
+
+
+
+			.overlay {
+			 height: 100%;
+			 width: 0;
+			 position: fixed;
+			 z-index: 1;
+			 left: 0;
+			 top: 0;
+			 background-color: rgb(0,0,0);
+			 background-color: rgba(0,0,0, 0.9);
+			 overflow-x: hidden;
+			 transition: 0.5s;
+			}
+
+
+
+			.overlay-content {
+			 position: relative;
+			 top: 25%;
+			 width: 20%;
+			 text-align: left;
+			 margin-top: 30px;
+			 margin-left: 30px;
+			}
+
+
+
+			.overlay a {
+			 padding: 8px;
+			 text-decoration: none;
+			 font-size: 25px;
+			 color: #818181;
+			 display: block;
+			 transition: 0.3s;
+			}
+
+
+
+			.overlay a:hover, .overlay a:focus {
+			 color: #f1f1f1;
+			}
+
+
+
+			.overlay .closebtn {
+			 position: absolute;
+			 top: 20px;
+			 left: 295px;
+			 font-size: 60px;
+			}
+
+
+
+			@media screen and (max-height: 450px) {
+			 .overlay a {font-size: 20px}
+			 .overlay .closebtn {
+			 font-size: 40px;
+			 top: 15px;
+			 right: 35px;
+			 }
+			}
+
+			body{
+				background-image: url(sfondo3.jpg);
+				background-attachment:fixed;
+			}
+
+	</style>
+
+</head>
+<body>
+	<div id="myNav" class="overlay">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				 <div class="overlay-content">
+				 	<a href="javascript:location.href='file:afterVision.html'">Home</a>
+					 <a href="javascript:location.href='file:Informazioni.html'">Informazioni</a>
+					 <a href="javascript:location.href='file:Contenuti.html'">Film</a>
+					 <a href="javascript:location.href='file:Contatti.html'">Contatti</a>
+				</div>
+			</div>
+
+			
+
+			<div class="header"> 
+				
+				<img src="img/av.png" alt="logo" style="position: absolute; top: 4%; right: 5px;"> 
+				<h2 style="color: white; position: absolute; top: 5%; left: 45%">Programmazione</h2>
+				<div class="trasparenza"></div>
+				<div class="container"> 
+					<div onclick="openNav()">
+					 	<div class="icona"></div>
+					 	<div class="icona"></div>
+					 	<div class="icona"></div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				/* Open when someone clicks on the span element */
+				function openNav() {
+				 document.getElementById("myNav").style.width = "350px";
+				}
+				function closeNav() {
+				 document.getElementById("myNav").style.width = "0%";
+				}
+			</script>
+
+
+
+
+	<div class="timeline">
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 febbraio 2021</div>
+	    <div class="timieline-title">1917</div>
+	    Sam Mendes si supera con un film dove gli spettatori diventano protagonisti
+	    in una corsa contro il tempo.
+	  </div>
+	  
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 marzo 2021</div>
+	    <div class="timieline-title">Cocktail di suspense</div>
+	    Quali sono i principali segreti di un film di tensione? 
+	  </div>
+	  
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 aprile 2021</div>
+	    <div class="timieline-title">Cosa guardiamo stasera?</div>
+	    Non è un paese per vecchi VS A un metro da te
+	  </div>
+	  
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 maggio 2021</div>
+	    <div class="timieline-title">Perfetti Sconosciuti</div>
+	    Ognuno di noi ha tre vite. Una pubblica. Una privata. E una segreta. 
+	  </div>
+	  
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 giugno 2021</div>
+	    <div class="timieline-title">Tutto Tarantino</div>
+	     Un regista post-moderno che mescola cultura alta e bassa, fra citazioni, musica rock, 
+	    e spettacolari movimenti di macchina.
+	 </div>
+
+	 <div class="timeline-content">
+	    <div class="timeline-period">14 luglio 2021</div>
+	    <div class="timieline-title">Cosa guardiamo stasera?</div>
+	    Lo squalo VS Nessuno mi può giudicare
+	  </div>
+
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 agosto 2021</div>
+	    <div class="timieline-title">Whiplash</div>
+	  	Damien Chazelle crea un film sull'amore disperato per la musica che porterà
+	  	il protagonista all'autodistruzione.
+	  </div>
+
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 settembre 2021</div>
+	    <div class="timieline-title">Storia del cinema</div>
+	    - Dal muto al sonoro <br>
+	     - Dal sonoro alla Nouvelle Vague  <br>
+	     - Dalla Nouvelle Vague ad oggi <br>
+	    </div>
+
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 ottobre 2021</div>
+	    <div class="timieline-title">Cosa guardiamo stasera?</div>
+	    La mighliore offerta VS Boy Girl - Questione di sesso
+	  </div>
+
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 novembre 2021</div>
+	    <div class="timieline-title">Snowpiercer</div>
+	    2031. Chi controlla la locomotiva controlla il Mondo. Una rivolta
+	    dalla coda alla testa del treno per uscire dalla grotta di Platone.
+	  </div>
+
+	  <div class="timeline-content">
+	    <div class="timeline-period">14 dicembre 2021</div>
+	    <div class="timieline-title">Tutto Hitchcock</div>
+	     Un regista che parla dell'uomo comune che si trova per qualche strano motivo
+	    immischiato in qualcosa di più grande di lui; tra perversione, voyeurismo, 
+	    personaggi doppi e assenti.
+	   </div>
+</div>
+
+<footer align='center' style="color: white;">
+	Copyright © Gaia Calamari, all rights reserved
+	<br><br>
+</footer>
+
+</body>
+
+</html>

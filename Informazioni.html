@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style1.css">
+	<meta name="viewport" content="width=device-width" > 
+	<title>afterVision info</title>
+
+	<style>
+		table {
+			width: 25%; 
+			text-align: center; 
+			font-family: "Times New Roman", Times, serif;
+			border: 1px solid black;
+			border-collapse: collapse;
+			position: absolute;
+			top: 400px;
+			left: 62px;
+		}
+		th{
+			background-color:lightblue;
+		}
+		th,td{
+			border: 1px solid black;
+		}
+		li{
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		
+
+		.icona {
+			cursor: pointer; 
+			 width: 35px;
+			 height: 5px;
+			 background-color: white;
+			 margin: 6px 0;
+			 position: relative;
+			 cursor: pointer;
+
+
+			-webkit-transition: background-color;
+			 -webkit-transition-duration: 0.5s;
+			 -webkit-transition-timing-function: ease-in;
+
+
+
+			-moz-transition: background-color;
+			 -moz-transition-duration: 0.5s;
+			 -moz-transition-timing-function: ease-in;
+
+
+
+			-ms-transition: background-color;
+			 -ms-transition-duration: 0.5s;
+			 -ms-transition-timing-function: ease-in;
+
+
+
+			-o-transition: background-color;
+			 -o-transition-duration: 0.5s;
+			 -o-transition-timing-function: ease-in;
+			}
+
+
+
+			.header{
+			 position: relative;
+			 width: 100%;
+			 height: 60px;
+			 background: fixed no-repeat center;
+			 background-size: cover;
+			 background-color: black;
+			 }
+
+
+
+			.trasparenza{
+			 position: absolute;
+			 width: 100%;
+			 height: 100%;
+			 -webkit-transition-duration: 1.5s ;
+			 -webkit-transition-timing-function: easy-in;
+			 -moz-transition: opacity;
+			 -moz-transition-duration: 1.5s ;
+			 -moz-transition-timing-function: easy-in;
+			 -ms-transition: opacity;
+			 -ms-transition-duration: 1.5s ;
+			 -ms-transition-timing-function: easy-in;
+			 -o-transition: opacity;
+			 -o-transition-duration: 1.5s ;
+			 -o-transition-timing-function: easy-in;
+			 }
+
+
+
+			.trasparenza:hover{
+			 opacity: 0.4;
+			 }
+
+
+
+			.container{
+				position: absolute;
+				top: 15%;
+				left: 1%;;
+				background-color: black;
+			}
+
+
+
+			.container:hover .icona{
+			 background-color: white;
+			 cursor: pointer; 
+			}
+
+
+
+			.overlay {
+			 height: 100%;
+			 width: 0;
+			 position: fixed;
+			 z-index: 1;
+			 left: 0;
+			 top: 0;
+			 background-color: rgb(0,0,0);
+			 background-color: rgba(0,0,0, 0.9);
+			 overflow-x: hidden;
+			 transition: 0.5s;
+			}
+
+
+
+			.overlay-content {
+			 position: relative;
+			 top: 25%;
+			 width: 20%;
+			 text-align: left;
+			 margin-top: 30px;
+			 margin-left: 30px;
+			}
+
+
+
+			.overlay a {
+			 padding: 8px;
+			 text-decoration: none;
+			 font-size: 25px;
+			 color: #818181;
+			 display: block;
+			 transition: 0.3s;
+			}
+
+
+
+			.overlay a:hover, .overlay a:focus {
+			 color: #f1f1f1;
+			}
+
+
+
+			.overlay .closebtn {
+			 position: absolute;
+			 top: 20px;
+			 left: 295px;
+			 font-size: 60px;
+			}
+
+
+
+			@media screen and (max-height: 450px) {
+			 .overlay a {font-size: 20px}
+			 .overlay .closebtn {
+			 font-size: 40px;
+			 top: 15px;
+			 right: 35px;
+			 }
+			}
+
+
+			/*TENDINA COI VIDEO*/
+
+			body{
+			   margin: 0;
+			   position: fixed; 
+		       overflow-y: hidden;
+		       width: 100%;
+		       background-image: url('sfondo3.jpg');
+			}
+
+
+
+
+			.i {
+			 width: 130px;
+			 height: 35px;
+			 background-color: white;
+			 margin: 6px 0;
+			 position: relative;
+			 cursor: pointer;
+			 text-align: center;
+
+
+
+
+			-webkit-transition: background-color;
+			 -webkit-transition-duration: 0.5s;
+			 -webkit-transition-timing-function: ease-in;
+
+
+
+			-moz-transition: background-color;
+			 -moz-transition-duration: 0.5s;
+			 -moz-transition-timing-function: ease-in;
+
+
+
+			-ms-transition: background-color;
+			 -ms-transition-duration: 0.5s;
+			 -ms-transition-timing-function: ease-in;
+
+
+
+			-o-transition: background-color;
+			 -o-transition-duration: 0.5s;
+			 -o-transition-timing-function: ease-in;
+			}
+
+
+
+
+			.t{
+			 position: absolute;
+			 width: 100%;
+			 height: 100%;
+			 opacity: 0.6;
+			 -webkit-transition: opacity;
+			 -webkit-transition-duration: 1.5s ;
+			 -webkit-transition-timing-function: easy-in;
+			 -moz-transition: opacity;
+			 -moz-transition-duration: 1.5s ;
+			 -moz-transition-timing-function: easy-in;
+			 -ms-transition: opacity;
+			 -ms-transition-duration: 1.5s ;
+			 -ms-transition-timing-function: easy-in;
+			 -o-transition: opacity;
+			 -o-transition-duration: 1.5s ;
+			 -o-transition-timing-function: easy-in;
+
+
+
+			}
+
+
+
+			.t:hover{
+			 opacity: 0.4;
+			 }
+
+
+
+			.c{
+			 position: absolute;
+			 bottom: -220px;
+			 left: 80%;
+			 width:35px;
+			}
+
+
+
+			.c:hover{
+			 margin-top: 0.5%;
+			 margin-left: 0.5%;
+			 border-radius:5%;
+			 border-color:black;
+			}
+
+			.c:hover .i{
+			 background-color: white;
+			}
+
+
+
+			.o {
+			 height: 100%;
+			 width: 0;
+			 position: fixed;
+			 z-index: 1;
+			 left: 0;
+			 top: 0;
+			 background-color: rgb(0,0,0);
+			 background-color: rgba(0,0,0, 0.9);
+			 overflow-x: hidden;
+			 transition: 0.5s;
+			}
+
+
+
+			.o-content {
+			 position: relative;
+			 top: 15%;
+			 width: 100%;
+			 margin-top: 20px;
+			}
+
+
+
+			.o a {
+			 padding: 8px;
+			 text-decoration: none;
+			 font-size: 36px;
+			 color: #818181;
+			 display: block;
+			 transition: 0.3s;
+			}
+
+
+
+			.o a:hover, .o a:focus {
+			 color: #f1f1f1;
+			}
+
+
+
+			.o .closeb {
+			 position: absolute;
+			 top: 20px;
+			 right: 45px;
+			 font-size: 60px;
+			}
+
+
+		
+	</style>
+</head>
+<body>
+	<div id="myNav" class="overlay">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				 <div class="overlay-content">
+					 <a href="javascript:location.href='file:afterVision.html'">Home</a>
+					 <a href="javascript:location.href='file:Contenuti.html'">Film</a>
+					 <a href="javascript:location.href='file:Programmazione.html'">Programmazione</a>
+					 <a href="javascript:location.href='file:Contatti.html'">Contatti</a>
+				</div>
+			</div>
+
+			
+
+			<div class="header"> 
+				
+				<img src="img/av.png" alt="logo" style="position: absolute; top: 4%; right: 5px;"> 
+				<h2 style="color: white; position: absolute; top: 5%; left: 45%">Informazioni</h2>
+				<div class="trasparenza"></div>
+				<div class="container"> 
+					<div onclick="openNav()">
+					 	<div class="icona"></div>
+					 	<div class="icona"></div>
+					 	<div class="icona"></div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				/* Open when someone clicks on the span element */
+				function openNav() {
+				 document.getElementById("myNav").style.width = "350px";
+				}
+				function closeNav() {
+				 document.getElementById("myNav").style.width = "0%";
+				}
+			</script>
+
+	<br><br>
+	<figure>
+		<img src="img/professionale.jpg" alt="afterVision" style="position: relative; top: -15px; left: 100px;">
+	</figure>
+
+<main>
+    <details>
+   		<summary role="button" tabindex="0">
+    		<p id="tit">afterVision</p>
+    	</summary>
+		<div>
+    		<p>E' un canale YouTube creato da <a href="javascript:location.href='file:Contatti.html'"><b>Gaia Calamari</b></a> e <a href="javascript:location.href='file:Contatti.html'"><b>Alessandro Glorioso</b></a>. Il canale presenta al suo interno diverse sezioni, dedicate alle recensioni, ai confronti, alle spiegazioni di film e registi. Offre anche una sezione dedicata all'intrattenimento. <br> Il primo video è stato pubblicato il 14 febbraio 2021.
+    		</p>
+    	</div>
+	</details>
+	<details>
+    	<summary role="button" tabindex="0">
+			<p id="tit">Programmazione</p>
+		</summary>
+        <div>
+          <p>Nuovi video il 14 di ogni mese alle ore 14:00. <a href="javascript:location.href='file:Programmazione.html'"><b>Clicca Qui</b></a> per la programmazione completa. Val al <a href="https://www.youtube.com/channel/UC382u2ihzQQ_e9bZQXMkeUA?view_as=subscriber"><b>Canale YouTube</b></a>
+			</p>
+        </div>
+    </details>
+</main>	
+<footer style="color: white; position: fixed;top: 620px; left: 540px;">
+			Copyright © Gaia Calamari, all rights reserved
+</footer>
+</body>
+</html>
