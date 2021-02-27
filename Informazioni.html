@@ -7,27 +7,6 @@
 	<title>afterVision info</title>
 
 	<style>
-		table {
-			width: 25%; 
-			text-align: center; 
-			font-family: "Times New Roman", Times, serif;
-			border: 1px solid black;
-			border-collapse: collapse;
-			position: absolute;
-			top: 400px;
-			left: 62px;
-		}
-		th{
-			background-color:lightblue;
-		}
-		th,td{
-			border: 1px solid black;
-		}
-		li{
-			font-family: "Times New Roman", Times, serif;
-		}
-
-		
 
 		.icona {
 			cursor: pointer; 
@@ -168,7 +147,7 @@
 
 
 
-			@media screen and (max-height: 450px) {
+			@media only screen and (min-width: 321px) and (max-width: 480px) {
 			 .overlay a {font-size: 20px}
 			 .overlay .closebtn {
 			 font-size: 40px;
@@ -178,8 +157,6 @@
 			}
 
 
-			/*TENDINA COI VIDEO*/
-
 			body{
 			   margin: 0;
 			   position: fixed; 
@@ -187,150 +164,6 @@
 		       width: 100%;
 		       background-image: url('sfondo3.jpg');
 			}
-
-
-
-
-			.i {
-			 width: 130px;
-			 height: 35px;
-			 background-color: white;
-			 margin: 6px 0;
-			 position: relative;
-			 cursor: pointer;
-			 text-align: center;
-
-
-
-
-			-webkit-transition: background-color;
-			 -webkit-transition-duration: 0.5s;
-			 -webkit-transition-timing-function: ease-in;
-
-
-
-			-moz-transition: background-color;
-			 -moz-transition-duration: 0.5s;
-			 -moz-transition-timing-function: ease-in;
-
-
-
-			-ms-transition: background-color;
-			 -ms-transition-duration: 0.5s;
-			 -ms-transition-timing-function: ease-in;
-
-
-
-			-o-transition: background-color;
-			 -o-transition-duration: 0.5s;
-			 -o-transition-timing-function: ease-in;
-			}
-
-
-
-
-			.t{
-			 position: absolute;
-			 width: 100%;
-			 height: 100%;
-			 opacity: 0.6;
-			 -webkit-transition: opacity;
-			 -webkit-transition-duration: 1.5s ;
-			 -webkit-transition-timing-function: easy-in;
-			 -moz-transition: opacity;
-			 -moz-transition-duration: 1.5s ;
-			 -moz-transition-timing-function: easy-in;
-			 -ms-transition: opacity;
-			 -ms-transition-duration: 1.5s ;
-			 -ms-transition-timing-function: easy-in;
-			 -o-transition: opacity;
-			 -o-transition-duration: 1.5s ;
-			 -o-transition-timing-function: easy-in;
-
-
-
-			}
-
-
-
-			.t:hover{
-			 opacity: 0.4;
-			 }
-
-
-
-			.c{
-			 position: absolute;
-			 bottom: -220px;
-			 left: 80%;
-			 width:35px;
-			}
-
-
-
-			.c:hover{
-			 margin-top: 0.5%;
-			 margin-left: 0.5%;
-			 border-radius:5%;
-			 border-color:black;
-			}
-
-			.c:hover .i{
-			 background-color: white;
-			}
-
-
-
-			.o {
-			 height: 100%;
-			 width: 0;
-			 position: fixed;
-			 z-index: 1;
-			 left: 0;
-			 top: 0;
-			 background-color: rgb(0,0,0);
-			 background-color: rgba(0,0,0, 0.9);
-			 overflow-x: hidden;
-			 transition: 0.5s;
-			}
-
-
-
-			.o-content {
-			 position: relative;
-			 top: 15%;
-			 width: 100%;
-			 margin-top: 20px;
-			}
-
-
-
-			.o a {
-			 padding: 8px;
-			 text-decoration: none;
-			 font-size: 36px;
-			 color: #818181;
-			 display: block;
-			 transition: 0.3s;
-			}
-
-
-
-			.o a:hover, .o a:focus {
-			 color: #f1f1f1;
-			}
-
-
-
-			.o .closeb {
-			 position: absolute;
-			 top: 20px;
-			 right: 45px;
-			 font-size: 60px;
-			}
-
-
-		
 	</style>
 </head>
 <body>
